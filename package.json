@@ -1,0 +1,20 @@
+{
+  "name": "triqui-game",
+  "version": "1.0.0",
+  "description": "Full-stack Tic-Tac-Toe game",
+  "scripts": {
+    "start": "cd server && npm start",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "test": "cd client && npm test",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
